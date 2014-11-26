@@ -1,8 +1,20 @@
 
-var aiden = angular.module('aiden', ['ngRoute', 'mgcrea.ngStrap', 'ngResource', 'famous.angular']);
+$(document).ready(function() {
 
-// Start
-cl("yolo");
+  $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+  $(window).resize(function(){
+    $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+  });
+
+  $(document).mousemove(function(event){
+    var msg = "Handler for .mousemove() called at ";
+    msg += event.pageX + ", " + event.pageY;
+    cl(msg);
+  });
+  
+});
+
 
 // shortcut for console.log
 function cl(data) {

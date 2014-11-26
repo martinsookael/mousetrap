@@ -1,6 +1,4 @@
 
-p {
-  margin-bottom: 10px;
+body {
+  overflow: hidden;
 }
-
-fa-surface, fa-app {display: block;}

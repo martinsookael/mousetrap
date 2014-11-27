@@ -1,6 +1,8 @@
 
 $(document).ready(function() {
 
+  cl("space and click are both catched");
+
   $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
 
   $(window).resize(function(){
@@ -20,7 +22,6 @@ $(document).ready(function() {
   $("#cover").on('click', function (){
     cl("click");
   })
-  
 
 });
 

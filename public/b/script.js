@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-  cl("space and click are both catched");
+  cl("mousemove, space and click are logged to console");
 
   $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
 

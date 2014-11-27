@@ -12,8 +12,18 @@ $(document).ready(function() {
     msg += event.pageX + ", " + event.pageY;
     cl(msg);
   });
+
+  Mousetrap.bind('space', function() {
+    cl('space');
+  });
+
+  $("#cover").on('click', function (){
+    cl("click");
+  })
   
+
 });
+
 
 
 // shortcut for console.log
